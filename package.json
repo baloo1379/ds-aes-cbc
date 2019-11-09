@@ -1,7 +1,7 @@
 {
-  "name": "js-template",
-  "version": "0.1.0",
-  "description": "Template for js projects",
+  "name": "ds-aes-cbc",
+  "version": "0.0.1",
+  "description": "AES CBC",
   "main": "dist/js/app.js",
   "scripts": {
     "dev": "npm run development",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/baloo1379/js-template.git"
+    "url": "git+https://github.com/baloo1379/ds-aes-cbc.git"
   },
   "author": "baloo1379",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/baloo1379/js-template/issues"
+    "url": "https://github.com/baloo1379/ds-aes-cbc/issues"
   },
-  "homepage": "https://github.com/baloo1379/js-template#readme",
+  "homepage": "https://github.com/baloo1379/ds-aes-cbc#readme",
   "devDependencies": {
     "cross-env": "^6.0.3",
     "eslint": "^6.6.0",
