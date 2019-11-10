@@ -4,6 +4,7 @@
   "description": "AES CBC",
   "main": "dist/js/app.js",
   "scripts": {
+    "start": "node dist/js/app.js",
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",
@@ -33,6 +34,7 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
+    "aes-js": "^3.1.2",
     "axios": "^0.19.0",
     "vue": "^2.6.10"
   }
