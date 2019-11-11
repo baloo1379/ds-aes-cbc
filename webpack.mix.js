@@ -7,8 +7,12 @@ mix
   })
   .sourceMaps(false, 'source-map')
   .sass('src/scss/app.scss', 'dist/css')
-  .js('src/js/app.js', 'dist/js')
-  .extract()
+  .js('src/js/app.js', 'app.js')
+  .js('src/js/client.js', 'dist/js/app.js')
+  .js('src/js/server.js', 'server.js')
   .copyDirectory('src/assets', 'dist/assets')
   .copy('src/index.html', 'dist/index.html')
-  .disableSuccessNotifications();
+  .disableSuccessNotifications()
+  .webpackConfig({
+    target: 'node',
+  });
