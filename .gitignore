@@ -64,5 +64,10 @@ typings/
 .idea/
 .vscode/
 .vs/
+dist/
 
 package-lock.json
+app.*
+server.*
+results*
+mix-manifest.json

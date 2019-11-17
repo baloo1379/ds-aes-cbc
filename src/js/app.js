@@ -188,6 +188,30 @@ function main() {
         console.log('File saved');
       });
     });
+  getFile('dist/assets/2MB.txt')
+    .then((data) => combineCalculation(data))
+    .then((store) => {
+      fs.writeFile('results2.json', JSON.stringify(store, null, 2), 'utf-8', (err) => {
+        if (err) throw new Error(err);
+        console.log('File saved');
+      });
+    });
+  getFile('dist/assets/512kB.txt')
+    .then((data) => combineCalculation(data))
+    .then((store) => {
+      fs.writeFile('results512.json', JSON.stringify(store, null, 2), 'utf-8', (err) => {
+        if (err) throw new Error(err);
+        console.log('File saved');
+      });
+    });
+  getFile('dist/assets/128kB.txt')
+    .then((data) => combineCalculation(data))
+    .then((store) => {
+      fs.writeFile('results128.json', JSON.stringify(store, null, 2), 'utf-8', (err) => {
+        if (err) throw new Error(err);
+        console.log('File saved');
+      });
+    });
 }
 
 main();
